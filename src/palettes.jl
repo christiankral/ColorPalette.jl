@@ -1,3 +1,5 @@
+export color_seasonal, color_contrast
+
 # https://www.schemecolor.com/only-seasonal.php
 color_seasonal = [["#312b59" "#5c5380" "#887ea8" "#b6acd3" "#e6ddff"];
     ["#853277" "#a35b95" "#c184b4" "#dfadd4" "#fdd7f4"];
