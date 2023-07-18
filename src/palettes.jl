@@ -1,9 +1,9 @@
 # https://www.schemecolor.com/only-seasonal.php
 color_seasonal = [["#312b59" "#5c5380" "#887ea8" "#b6acd3" "#e6ddff"];
     ["#853277" "#a35b95" "#c184b4" "#dfadd4" "#fdd7f4"];
-    ["#d37f2a" "#e09651" "#ecad75" "#f7c49a" "#ffdcc0"];
+    ["#7aa337" "#93b45b" "#abc57d" "#c3d69f" "#dbe7c2"];
     ["#f0C435" "#f3cb5c" "#f4d27d" "#f4da9d" "#f3e1bc"];
-    ["#7aa337" "#93b45b" "#abc57d" "#c3d69f" "#dbe7c2"]]
+    ["#d37f2a" "#e09651" "#ecad75" "#f7c49a" "#ffdcc0"]]
 
 # First and fourth color of https://www.schemecolor.com/only-seasonal.php
 # In combination with https://www.learnui.design/tools/data-color-picker.html#palette
