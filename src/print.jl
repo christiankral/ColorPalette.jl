@@ -32,6 +32,10 @@ end
 
 
 function printcolorlatex(color; name="")
+    if name != ""
+        println("% Color palette: "*name)
+        println("\\usepackage{xcolor}")
+    end
     for k in 1:size(color,1)
         for l in 1:size(color,2)
             c = color[k,l]
