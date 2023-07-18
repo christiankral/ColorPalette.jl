@@ -1,3 +1,5 @@
+export color2gray
+
 function color2gray(color)
     hex_value = parse(UInt, color[2:end], base=16)
 

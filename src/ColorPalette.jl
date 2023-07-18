@@ -3,8 +3,9 @@ module ColorPalette
 
     using Printf
     using PyPlot
-    
-    include("conversion.jl")
+
     include("palettes.jl")
+    include("conversion.jl")
+    include("print.jl")
     include("plot.jl")
 end # module ColorPalette
