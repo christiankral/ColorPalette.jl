@@ -10,7 +10,7 @@ function PlotPalette(color; save = false)
         savefig("color.png",dpi=300)
     end
 
-    figure(figsize = (3.0, 2.5))
+    figure()
     for k in 1:size(color,1)
         for l in 1:size(color,2)
             c = color[k,l]
