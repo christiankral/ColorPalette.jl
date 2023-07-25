@@ -5,7 +5,7 @@ module ColorPalette
     using PyPlot
 
     include("palettes.jl")
-    include("conversion.jl")
+    include("functions.jl")
     include("print.jl")
     include("plot.jl")
 end # module ColorPalette
