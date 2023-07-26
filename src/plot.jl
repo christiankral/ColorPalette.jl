@@ -21,7 +21,7 @@ function plotpalette(color; save = false, name="")
     end
     removeaxis()
     if save
-        savefig("color"*name*".png",dpi=300)
+        savefig("color"*name*".png",dpi=300, bbox_inches="tight", pad_inches=0)
         close()
     end
 
@@ -34,7 +34,7 @@ function plotpalette(color; save = false, name="")
     end
     removeaxis()
     if save
-        savefig("gray"*name*".png",dpi=300)
+        savefig("gray"*name*".png",dpi=300, bbox_inches="tight", pad_inches=0)
         close()
     end
     return true
