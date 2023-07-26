@@ -9,16 +9,7 @@ function printcoloripe(color; name="")
     for k in 1:size(color,1)
         for l in 1:size(color,2)
             c = color[k,l]
-            hex_value = parse(UInt, c[2:end], base=16)
-            # Color code 0 ≤ red|green|blue ≤ 1
-            red = (hex_value >> 16) & 0xFF
-            green = (hex_value >> 8) & 0xFF
-            blue = hex_value & 0xFF
-
-            # Color code 0 ≤ r|g|b ≤ 1
-            r = string(round(red/255,sigdigits=4))
-            g = string(round(green/255,sigdigits=4))
-            b = string(round(blue/255,sigdigits=4))
+            r, g, b = color2rgb(c)
 
             # Print color code in Ipe format
             str = "  <color name=\"color"*string(k)*string(l)*"\" value=\""*string(r)*" "*string(g)*" "*string(b)*"\"/>"
