@@ -1,4 +1,5 @@
-export printcoloripe, printcolorlatex
+export printcoloripe, printcoloripeall,
+    printcolorlatex, printcolorlatexall
 
 function printcoloripe(color; name="")
     # Write to file
@@ -28,6 +29,14 @@ function printcoloripe(color; name="")
     end
 end
 
+function printcoloripeall()
+    printcoloripe(color_seasonal, name="Deasonal")
+    printcoloripe(color_contrast, name="Contrast")
+    printcoloripe(color_coolors, name="Coolors")
+    printcoloripe(color_purple, name="Purple")
+    printcoloripe(color_hanser, name="Hanser")
+    printcoloripe(color_hanser2, name="Hanser2")
+end
 
 function printcolorlatex(color; name="")
     if name != ""
@@ -55,4 +64,13 @@ function printcolorlatex(color; name="")
     if name != ""
         close(file)
     end
+end
+
+function printcolorlatexall()
+    printcolorlatex(color_seasonal, name="Deasonal")
+    printcolorlatex(color_contrast, name="Contrast")
+    printcolorlatex(color_coolors, name="Coolors")
+    printcolorlatex(color_purple, name="Purple")
+    printcolorlatex(color_hanser, name="Hanser")
+    printcolorlatex(color_hanser2, name="Hanser2")
 end
