@@ -1,4 +1,4 @@
-export plotpalette
+export plotpalette, plotpalettes
 
 function removeaxis(ax=gca())
     setproperty!(ax,"set_axis_off",true)
@@ -22,6 +22,7 @@ function plotpalette(color; save = false, name="")
     removeaxis()
     if save
         savefig("color"*name*".png",dpi=300)
+        close()
     end
 
     figure()
@@ -34,6 +35,16 @@ function plotpalette(color; save = false, name="")
     removeaxis()
     if save
         savefig("gray"*name*".png",dpi=300)
+        close()
     end
     return true
+end
+
+function plotpalettes()
+    plotpalette(color_seasonal, save=true, name="_seasonal")
+    plotpalette(color_contrast, save=true, name="contrast")
+    plotpalette(color_coolors, save=true, name="_coolors")
+    plotpalette(color_purple, save=true, name="_purple")
+    plotpalette(color_hanser, save=true, name="_hanser")
+    plotpalette(color_hanser2, save=true, name="_hanser2")
 end

@@ -9,13 +9,4 @@ function tests()
     end
 end
 
-function plots()
-    plotpalette(color_seasonal, save=true, name="_seasonal")
-    plotpalette(color_contrast, save=true, name="contrast")
-    plotpalette(color_coolors, save=true, name="_coolors")
-    plotpalette(color_purple, save=true, name="_purple")
-    plotpalette(color_hanser, save=true, name="_hanser")
-    plotpalette(color_hanser2, save=true, name="_hanser2")
-end
-
 tests()
