@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE ipestyle SYSTEM "ipe.dtd">
+<ipestyle name="Contrast">
+  <color name="color11" value="0.1922 0.1686 0.349"/>
+  <color name="color12" value="0.3608 0.3255 0.502"/>
+  <color name="color13" value="0.5333 0.4941 0.6588"/>
+  <color name="color14" value="0.7137 0.6745 0.8275"/>
+  <color name="color15" value="0.902 0.8667 1.0"/>
+  <color name="color21" value="0.5098 0.2235 0.4314"/>
+  <color name="color22" value="0.6314 0.3725 0.5529"/>
+  <color name="color23" value="0.7529 0.5255 0.6824"/>
+  <color name="color24" value="0.8745 0.6824 0.8118"/>
+  <color name="color25" value="1.0 0.8431 0.949"/>
+  <color name="color31" value="0.7882 0.3098 0.3961"/>
+  <color name="color32" value="0.851 0.4471 0.5059"/>
+  <color name="color33" value="0.9059 0.5765 0.6196"/>
+  <color name="color34" value="0.9569 0.7059 0.7373"/>
+  <color name="color35" value="1.0 0.8353 0.8549"/>
+  <color name="color41" value="0.9451 0.5059 0.2902"/>
+  <color name="color42" value="0.9686 0.5961 0.4039"/>
+  <color name="color43" value="0.9843 0.6824 0.5255"/>
+  <color name="color44" value="0.9961 0.7647 0.6471"/>
+  <color name="color45" value="1.0 0.851 0.7725"/>
+  <color name="color51" value="0.9412 0.7686 0.2078"/>
+  <color name="color52" value="0.9529 0.7961 0.3608"/>
+  <color name="color53" value="0.9569 0.8235 0.4902"/>
+  <color name="color54" value="0.9569 0.8549 0.6157"/>
+  <color name="color55" value="0.9529 0.8824 0.7373"/>
+</ipestyle>
