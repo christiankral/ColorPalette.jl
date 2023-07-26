@@ -49,6 +49,7 @@ function contrast(color1, color2)
 end
 
 # Convert RGB to HSV
+# Source: https://de.wikipedia.org/wiki/HSV-Farbraum
 function HSV(color)
     R, G, B = color2RGB(color)
     MAX = max(R, G, B)
