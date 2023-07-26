@@ -1,4 +1,4 @@
-export plotpalette, plotpalettes
+export plotpalette, plotpaletteall
 
 function removeaxis(ax=gca())
     setproperty!(ax,"set_axis_off",true)
@@ -40,7 +40,7 @@ function plotpalette(color; save = false, name="")
     return true
 end
 
-function plotpalettes()
+function plotpaletteall()
     plotpalette(color_seasonal, save=true, name="_seasonal")
     plotpalette(color_contrast, save=true, name="_contrast")
     plotpalette(color_coolors, save=true, name="_coolors")
