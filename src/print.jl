@@ -30,7 +30,7 @@ function printcoloripe(color; name="")
 end
 
 function printcoloripeall()
-    printcoloripe(color_seasonal, name="Deasonal")
+    printcoloripe(color_seasonal, name="Seasonal")
     printcoloripe(color_contrast, name="Contrast")
     printcoloripe(color_coolors, name="Coolors")
     printcoloripe(color_purple, name="Purple")
@@ -67,7 +67,7 @@ function printcolorlatex(color; name="")
 end
 
 function printcolorlatexall()
-    printcolorlatex(color_seasonal, name="Deasonal")
+    printcolorlatex(color_seasonal, name="Seasonal")
     printcolorlatex(color_contrast, name="Contrast")
     printcolorlatex(color_coolors, name="Coolors")
     printcolorlatex(color_purple, name="Purple")
