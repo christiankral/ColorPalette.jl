@@ -1,5 +1,5 @@
 export color2RGB, color2rgb, color2gray,
-    brightness, contrast
+    brightness, contrast, HSV
 
 # Convert color to RGB codes between 0 and 255
 function color2RGB(color)
@@ -46,4 +46,28 @@ function contrast(color1, color2)
     R2, G2, B2 = color2RGB(color2)
     contrast = abs(R1 - R2) + abs(G1 - G2) + abs(B1 - B2)
     return contrast, contrast > 500
+end
+
+# Convert RGB to HSV
+function HSV(color)
+    R, G, B = color2RGB(color)
+    MAX = max(R, G, B)
+    MIN = min(R, G, B)
+    # Calculate hue
+    if MAX == MIN
+        H = 0
+    elseif MAX == R
+        H = 60 * (0 + (G - B) / (MAX - MIN))
+    elseif MAX == G
+        H = 60 * (2 + (B - R) / (MAX - MIN))
+    elseif MAX == B
+        H = 60 * (4 + (R - G) / (MAX - MIN))
+    end
+    # Modulo calculation of hue
+    H = H < 0 ? H + 360 : H
+    # Calculate saturation
+    S = MAX == MIN ? 0 : (MAX - MIN) / MAX
+    # Calculate value
+    V = MAX
+    return H, S, V
 end
