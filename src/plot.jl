@@ -11,7 +11,7 @@ function removeaxis(ax=gca())
     axis("square")
 end
 
-function plotpalette(color; save = false)
+function plotpalette(color; save = false, name="")
     figure()
     for k in 1:size(color,1)
         for l in 1:size(color,2)
@@ -21,7 +21,7 @@ function plotpalette(color; save = false)
     end
     removeaxis()
     if save
-        savefig("color.png",dpi=300)
+        savefig("color"*name*".png",dpi=300)
     end
 
     figure()
@@ -33,6 +33,6 @@ function plotpalette(color; save = false)
     end
     removeaxis()
     if save
-        savefig("gray.png",dpi=300)
+        savefig("gray"*name*".png",dpi=300)
     end
 end
