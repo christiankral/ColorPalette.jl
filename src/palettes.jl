@@ -18,18 +18,18 @@ color_contrast = [
     ["#f0c435" "#f3cb5c" "#f4d27d" "#f4da9d" "#f3e1bc"]]
 
 color_coolors = [
-    ["#0f4c5c"];
-    ["#5f0f40"];
-    ["#9a031e"];
-    ["#e36414"];
-    ["#fb8b24"]]
+    ["#0f4c5c" "#3b7182" "#6398aa" "#8bc0d4" "#b4ebff"];
+    ["#5f0f40" "#864268" "#ae7292" "#d6a3be" "#ffd6ec"];
+    ["#9a031e" "#b84945" "#d27970" "#eaa79f" "#ffd6d0"];
+    ["#e36414" "#ee8343" "#f6a06d" "#fcbd98" "#ffdac4"];
+    ["#fb8b24" "#ff9f50" "#ffb376" "#ffc79b" "#ffdbc1"]]
 
 color_purple = [
-    ["#3f1551"];
-    ["#653780"];
-    ["#9c3587"];
-    ["#e53f71"];
-    ["#f8955b"]]
+    ["#3f1551" "#6a4379" "#9672a3" "#acb8e0" "#f4dafc"];
+    ["#653780" "#875e9e" "#aa85bd" "#ceafdd" "#f2dafd"];
+    ["#9c3587" "#b55fa1" "#ce87bc" "#e6afd7" "#fed7f3"];
+    ["#e53f71" "#ef6b8b" "#f790a6" "#fcb3c2" "#ffd5dd"];
+    ["#f8955b" "#fba774" "#feb88e" "#ffc9a9" "#ffdac4"]]
 
 color_hanser = [
     ["#204786" "#546aa3" "#8090c1" "#acb8e0" "#d9e1ff"];
@@ -37,3 +37,10 @@ color_hanser = [
     ["#853277" "#a35b95" "#c184b4" "#dfadd4" "#fdd7f4"];
     ["#598234" "#789b57" "#97b47a" "#b7ce9f" "#d7e8c4"];
     ["#f68712" "#fc9c48" "#ffb171" "#ffc699" "#ffdbc1"]]
+
+color_hanser2 = [
+    ["#384092" "#6664ad" "#908bc8" "#b9b3e3" "#e3deff"];
+    ["#c71681" "#d7579b" "#e684b6" "#f3add0" "#ffd6ea"];
+    ["#7c338b" "#9b5ca6" "#ba85c1" "#d8aedd" "#f7d9fa"];
+    ["#50a32c" "#74b555" "#94c67a" "#b4d8a0" "#d3e9c6"];
+    ["#e9ad00" "#efb947" "#f4c570" "#f6d297" "#f6dfbd"]]
