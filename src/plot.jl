@@ -35,4 +35,5 @@ function plotpalette(color; save = false, name="")
     if save
         savefig("gray"*name*".png",dpi=300)
     end
+    return true
 end
