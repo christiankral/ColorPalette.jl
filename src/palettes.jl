@@ -1,4 +1,4 @@
-export color_seasonal, color_contrast, color_coolors
+export color_seasonal, color_contrast, color_coolors,
     color_purple, color_hanser, color_hanser2
 
 # Inspired by: https://www.schemecolor.com/only-seasonal.php
