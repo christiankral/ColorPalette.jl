@@ -1,5 +1,5 @@
 export color2RGB, color2rgb, color2gray,
-    brightness, contrast, HSV
+    brightness, contrast, color2HSV
 
 # Convert color to RGB codes between 0 and 255
 function color2RGB(color)
@@ -50,7 +50,7 @@ end
 
 # Convert RGB to HSV
 # Source: https://de.wikipedia.org/wiki/HSV-Farbraum
-function HSV(color)
+function color2HSV(color)
     R, G, B = color2RGB(color)
     MAX = max(R, G, B)
     MIN = min(R, G, B)
