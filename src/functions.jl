@@ -1,34 +1,40 @@
-export color2gray, brightness, contrast
+export color2RGB, color2rgb, color2gray,
+    brightness, contrast
 
-function color2gray(color)
+# Convert color to RGB codes between 0 and 255
+function color2RGB(color)
     hex_value = parse(UInt, color[2:end], base=16)
 
-    red = Int((hex_value >> 16) & 0xFF)
-    green = Int((hex_value >> 8) & 0xFF)
-    blue = Int(hex_value & 0xFF)
+    R = Int((hex_value >> 16) & 0xFF)
+    G = Int((hex_value >> 8) & 0xFF)
+    B = Int(hex_value & 0xFF)
+    return R,G,B
+end
 
-    grayscale_value = Int(round((red + green + blue) / 3))
+# Convert color to rgb codes between 0 and 1
+function color2rgb(color)
+    R, G, B = color2RGB(color)
+    return R/255, G/255, B/255
+end
 
-    # Konvertiere den Graustufenwert zurück in einen Farbcode
-    grayscale_hex = "#" * uppercase(string(grayscale_value, base=16))^3
-    return grayscale_hex
+# Convert color to grayscale
+function color2gray(color)
+    R, G, B = color2RGB(color)
+    grayscale = Int(round((R + G + B) / 3))
+
+    # Convert gray scale value to color code
+    gray = "#" * string(grayscale, base=16)^3
+    return gray
 end
 
 # Calculate difference of brightness
 # Source: https://www.had2know.org/technology/color-contrast-calculator-web-design.html
 function brightness(color1, color2)
-    hex_value1 = parse(UInt, color1[2:end], base=16)
-    hex_value2 = parse(UInt, color2[2:end], base=16)
+    R1, G1, B1 = color2RGB(color1)
+    R2, G2, B2 = color2RGB(color2)
 
-    red1 = Int((hex_value1 >> 16) & 0xFF)
-    red2 = Int((hex_value2 >> 16) & 0xFF)
-    green1 = Int((hex_value1 >> 8) & 0xFF)
-    green2 = Int((hex_value2 >> 8) & 0xFF)
-    blue1 = Int(hex_value1 & 0xFF)
-    blue2 = Int(hex_value2 & 0xFF)
-
-    brightness1 = (299 * red1 + 587 * green1 + 114 * blue1) / 1000
-    brightness2 = (299 * red2 + 587 * green2 + 114 * blue2) / 1000
+    brightness1 = (299 * R1 + 587 * G1 + 114 * B1) / 1000
+    brightness2 = (299 * R2 + 587 * G2 + 114 * B2) / 1000
     diff = abs(brightness1 - brightness2)
     return diff, diff > 125
 end
@@ -36,16 +42,8 @@ end
 # Calculate difference of contrast
 # Source: https://www.had2know.org/technology/color-contrast-calculator-web-design.html
 function contrast(color1, color2)
-    hex_value1 = parse(UInt, color1[2:end], base=16)
-    hex_value2 = parse(UInt, color2[2:end], base=16)
-
-    red1 = Int((hex_value1 >> 16) & 0xFF)
-    red2 = Int((hex_value2 >> 16) & 0xFF)
-    green1 = Int((hex_value1 >> 8) & 0xFF)
-    green2 = Int((hex_value2 >> 8) & 0xFF)
-    blue1 = Int(hex_value1 & 0xFF)
-    blue2 = Int(hex_value2 & 0xFF)
-    println(abs(red1 - red2)," | ",abs(green1 - green2)," | ",abs(blue1 - blue2))
-    contrast = abs(red1 - red2) + abs(green1 - green2) + abs(blue1 - blue2)
+    R1, G1, B1 = color2RGB(color1)
+    R2, G2, B2 = color2RGB(color2)
+    contrast = abs(R1 - R2) + abs(G1 - G2) + abs(B1 - B2)
     return contrast, contrast > 500
 end
