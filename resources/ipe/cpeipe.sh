@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # ---------------------------------------------------------------------
-# cpeipe 0.2.0 (C) Christian Kral 2023-07-27
+# cpeipe 0.3.0 (C) Christian Kral 2023-07-27
 #     Exchange ColorPalette.X.isy in ipe file
 #     by ColorPalette.Y.isy
 # ---------------------------------------------------------------------
 
-echo "cpeipe.sh 0.2.0 (C) Christian Kral 2023-07-27"
+echo "cpeipe.sh 0.3.0 (C) Christian Kral 2023-07-27"
 
 if test $# -eq 0
 then
@@ -14,7 +14,7 @@ then
   echo "cpeipe.sh FILE ColorPalette.Y.isy"
   echo ""
   echo "    Converts one file or more IPE files"
-  echo "    exchanging any color palette ColorPalette.X.isy"
+  echo "    by exchanging any color palette ColorPalette.X.isy"
   echo "    by another color palette ColorPalette.Y.isy"
   echo ""
   echo "    FILE   File to be converted or file pattern, e.g. \"*.ipe\""
@@ -24,9 +24,7 @@ then
   exit
 fi
 
-# Implicitly
-
-# Check if process if ColorPalette.Y.isy does exist
+# Check if ColorPalette.Y.isy exists in default directory .ipe/styles
 if [ ! -f "${2}" ];
 then
   CP="${HOME}/.ipe/styles/${2}"
@@ -57,4 +55,4 @@ for file in $(find . -maxdepth 1 -name "$1"); do
   sed -i -ne '/<ipestyle name=\"ColorPalette./ {p; r .ins' -e ':a; n; /<\/ipestyle>/ {p; b}; ba}; p' "${file}"
 done
 sed -i "/<ipestyle name=\"ColorPalette./c\\<ipestyle name=\"${CPN}\">" "${file}"
-# rm .ins
+rm .ins
