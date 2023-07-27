@@ -21,7 +21,7 @@ function plotpalette(color; save = false, name="")
     end
     removeaxis()
     if save
-        savefig("color"*name*".png",dpi=300, bbox_inches="tight", pad_inches=0)
+        savefig(name*"_color.png",dpi=300, bbox_inches="tight", pad_inches=0)
         close()
     end
 
@@ -34,17 +34,17 @@ function plotpalette(color; save = false, name="")
     end
     removeaxis()
     if save
-        savefig("gray"*name*".png",dpi=300, bbox_inches="tight", pad_inches=0)
+        savefig(name*"_gray.png",dpi=300, bbox_inches="tight", pad_inches=0)
         close()
     end
     return true
 end
 
 function plotpaletteall()
-    plotpalette(color_seasonal, save=true, name="_seasonal")
-    plotpalette(color_contrast, save=true, name="_contrast")
-    plotpalette(color_coolors, save=true, name="_coolors")
-    plotpalette(color_purple, save=true, name="_purple")
-    plotpalette(color_hanser, save=true, name="_hanser")
-    plotpalette(color_hanser2, save=true, name="_hanser2")
+    plotpalette(ColorPalette.seasonal, save=true, name="ColorPalette.seasonal")
+    plotpalette(ColorPalette.contrast, save=true, name="ColorPalette.contrast")
+    plotpalette(ColorPalette.coolors, save=true, name="ColorPalette.coolors")
+    plotpalette(ColorPalette.purple, save=true, name="ColorPalette.purple")
+    plotpalette(ColorPalette.hanser, save=true, name="ColorPalette.hanser")
+    plotpalette(ColorPalette.hanser2, save=true, name="ColorPalette.hanser2")
 end

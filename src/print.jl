@@ -30,12 +30,12 @@ function printcoloripe(color; name="")
 end
 
 function printcoloripeall()
-    printcoloripe(color_seasonal, name="Seasonal")
-    printcoloripe(color_contrast, name="Contrast")
-    printcoloripe(color_coolors, name="Coolors")
-    printcoloripe(color_purple, name="Purple")
-    printcoloripe(color_hanser, name="Hanser")
-    printcoloripe(color_hanser2, name="Hanser2")
+    printcoloripe(ColorPalette.seasonal, name="ColorPalette.seasonal")
+    printcoloripe(ColorPalette.contrast, name="ColorPalette.contrast")
+    printcoloripe(ColorPalette.coolors, name="ColorPalette.coolors")
+    printcoloripe(ColorPalette.purple, name="ColorPalette.purple")
+    printcoloripe(ColorPalette.hanser, name="ColorPalette.hanser")
+    printcoloripe(ColorPalette.hanser2, name="ColorPalette.hanser2")
 end
 
 function printcolorlatex(color; name="")
@@ -67,10 +67,10 @@ function printcolorlatex(color; name="")
 end
 
 function printcolorlatexall()
-    printcolorlatex(color_seasonal, name="Seasonal")
-    printcolorlatex(color_contrast, name="Contrast")
-    printcolorlatex(color_coolors, name="Coolors")
-    printcolorlatex(color_purple, name="Purple")
-    printcolorlatex(color_hanser, name="Hanser")
-    printcolorlatex(color_hanser2, name="Hanser2")
+    printcolorlatex(ColorPalette.seasonal, name="ColorPalette.seasonal")
+    printcolorlatex(ColorPalette.contrast, name="ColorPalette.contrast")
+    printcolorlatex(ColorPalette.coolors, name="ColorPalette.coolors")
+    printcolorlatex(ColorPalette.purple, name="ColorPalette.purple")
+    printcolorlatex(ColorPalette.hanser, name="ColorPalette.hanser")
+    printcolorlatex(ColorPalette.hanser2, name="ColorPalette.hanser2")
 end
