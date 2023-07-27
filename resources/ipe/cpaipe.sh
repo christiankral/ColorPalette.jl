@@ -42,15 +42,11 @@ echo "    from file ${CP}"
 
 # Copy $CP to local folder and modify it for being substituted
 cp "${CP}" ".ins"
-# sed -i '/<ipestyle name=\"ColorPalette./d' .ins
 sed -i '/<?xml version=\"1.0\"?>/d' .ins
 sed -i '/<!DOCTYPE ipestyle SYSTEM \"ipe.dtd\">/d' .ins
-# sed -i '/<\/ipestyle>/d' .ins
 
 for file in $(find . -maxdepth 1 -name "$1"); do
   echo "Processing ${file}"
-  # Inspired by:
-  # https://unix.stackexchange.com/questions/121161/how-to-insert-text-after-a-certain-string-in-a-file
-  sed -i "/<info created/ r .ins" ${file}
+  awk '{a[NR]=$0} /\/ipestyle>/ {found=NR} END {for (i=1; i<=NR; i++) {print a[i]; if (i==found) system("cat .ins")}}' ${file} > tmpfile && mv tmpfile ${file}
 done
-# rm .ins
+rm .ins
