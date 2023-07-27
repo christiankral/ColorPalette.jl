@@ -31,6 +31,7 @@ Typically, but necessarely, the color indexes `c` mean:
 In Julia the package `ColorPalette` can be loaded and a color palette can be seleceted, e.g. by
 
 ```julia
+using ColorPalette # Needs to be installed first
 color = hanser
 ```
 
