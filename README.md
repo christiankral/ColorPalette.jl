@@ -2,6 +2,19 @@
 
 Julia pacakge providing different color palettes for scientific publications
 
+# Purpose
+
+Provide different color palettes with the intention to be applied
+electrical engineering applications.
+
+Each color palette consists of
+
+- five colors with
+- five hues, each.
+
+<img src="https://github.com/christiankral/ColorPalette.jl/blob/main/resources/png/ColorPalette.hanser_color.png" width="400"/>
+
+
 # Install
 
 Install in Julia using
