@@ -30,6 +30,7 @@ function printcoloripe(color; name="")
 end
 
 function printcoloripeall()
+    printcoloripe(ColorPalette.black, name="ColorPalette.black")
     printcoloripe(ColorPalette.gray, name="ColorPalette.gray")
     printcoloripe(ColorPalette.seasonal, name="ColorPalette.seasonal")
     printcoloripe(ColorPalette.coolors, name="ColorPalette.coolors")
@@ -68,6 +69,7 @@ function printcolorlatex(color; name="")
 end
 
 function printcolorlatexall()
+    printcolorlatex(ColorPalette.black, name="ColorPalette.black")
     printcolorlatex(ColorPalette.gray, name="ColorPalette.gray")
     printcolorlatex(ColorPalette.seasonal, name="ColorPalette.seasonal")
     printcolorlatex(ColorPalette.coolors, name="ColorPalette.coolors")

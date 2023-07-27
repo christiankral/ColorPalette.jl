@@ -41,6 +41,7 @@ function plotpalette(color; save = false, name="")
 end
 
 function plotpaletteall()
+    plotpalette(ColorPalette.black, save=true, name="ColorPalette.black")
     plotpalette(ColorPalette.gray, save=true, name="ColorPalette.gray")
     plotpalette(ColorPalette.seasonal, save=true, name="ColorPalette.seasonal")
     plotpalette(ColorPalette.coolors, save=true, name="ColorPalette.coolors")

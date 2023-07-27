@@ -1,6 +1,14 @@
 export gray, seasonal, coolors,
     purple, purple2, hanser, hanser2
 
+# Black palette
+black = [
+    ["#000000" "#363636" "#6a6a6a" "#a4a4a4" "#e2e2e2"];
+    ["#000000" "#363636" "#6a6a6a" "#a4a4a4" "#e2e2e2"];
+    ["#000000" "#363636" "#6a6a6a" "#a4a4a4" "#e2e2e2"];
+    ["#000000" "#363636" "#6a6a6a" "#a4a4a4" "#e2e2e2"];
+    ["#000000" "#363636" "#6a6a6a" "#a4a4a4" "#e2e2e2"]]
+
 # Gray palette
 gray = [
     ["#000000" "#363636" "#6a6a6a" "#a4a4a4" "#e2e2e2"];
