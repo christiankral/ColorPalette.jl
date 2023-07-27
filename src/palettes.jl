@@ -55,7 +55,7 @@ hanser = [
     ["#204786" "#546aa3" "#8090c1" "#acb8e0" "#d9e1ff"];
     ["#d71d2b" "#e65b50" "#f38777" "#fbafa2" "#ffd7cf"];
     ["#853277" "#a35b95" "#c184b4" "#dfadd4" "#fdd7f4"];
-    ["#598234" "#789b57" "#97b47a" "#b7ce9f" "#d7e8c4"];
+    ["#50a32c" "#74b555" "#94c67a" "#b4d8a0" "#d3e9c6"];
     ["#f68712" "#fc9c48" "#ffb171" "#ffc699" "#ffdbc1"]]
 
 # Color palette matching technical book publications of the Hanser Verlag
