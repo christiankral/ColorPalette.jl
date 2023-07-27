@@ -66,3 +66,12 @@ hanser2 = [
     ["#7c338b" "#9b5ca6" "#ba85c1" "#d8aedd" "#f7d9fa"];
     ["#50a32c" "#74b555" "#94c67a" "#b4d8a0" "#d3e9c6"];
     ["#e9ad00" "#efb947" "#f4c570" "#f6d297" "#f6dfbd"]]
+
+# Color palette matching technical book publications of the Hanser Verlag
+# Variant: alternative colors 3
+hanser3 = [
+    ["#2950a1" "#5e71b8" "#8994d0" "#b2bae7" "#dce0ff"];
+    ["#a42982" "#bc5a9d" "#d384b8" "#e9add4" "#ffd7f0"];
+    ["#60318a" "#845aa6" "#a883c3" "#ccaee0" "#f0dbfe"];
+    ["#009a45" "#4fae66" "#7ac388" "#a2d7aa" "#c9ebcd"];
+    ["#f9bb15" "#fbc44e" "#fccc75" "#fad699" "#f6dfbd"]]

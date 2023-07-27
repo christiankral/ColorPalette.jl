@@ -38,6 +38,7 @@ function printcoloripeall()
     printcoloripe(ColorPalette.purple2, name="ColorPalette.purple2")
     printcoloripe(ColorPalette.hanser, name="ColorPalette.hanser")
     printcoloripe(ColorPalette.hanser2, name="ColorPalette.hanser2")
+    printcoloripe(ColorPalette.hanser3, name="ColorPalette.hanser3")
 end
 
 function printcolorlatex(color; name="")
@@ -77,4 +78,5 @@ function printcolorlatexall()
     printcolorlatex(ColorPalette.purple2, name="ColorPalette.purple2")
     printcolorlatex(ColorPalette.hanser, name="ColorPalette.hanser")
     printcolorlatex(ColorPalette.hanser2, name="ColorPalette.hanser2")
+    printcolorlatex(ColorPalette.hanser3, name="ColorPalette.hanser3")
 end

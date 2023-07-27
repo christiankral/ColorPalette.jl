@@ -49,4 +49,5 @@ function plotpaletteall()
     plotpalette(ColorPalette.purple2, save=true, name="ColorPalette.purple2")
     plotpalette(ColorPalette.hanser, save=true, name="ColorPalette.hanser")
     plotpalette(ColorPalette.hanser2, save=true, name="ColorPalette.hanser2")
+    plotpalette(ColorPalette.hanser3, save=true, name="ColorPalette.hanser3")
 end
