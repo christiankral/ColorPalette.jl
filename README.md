@@ -35,7 +35,7 @@ using ColorPalette # Needs to be installed first
 color = hanser
 ```
 
-Plots and graphs can then be created by using the `color[c,h]`
+Plots and graphs can then be created by using colors from `color[c,h]`.
 
 The color palette can be easly exchanged by another one, without changing the entire Julia code, as `color` is assigned on a single location. The assignment can even be provided in an external file to be included, so that each plot and graph use the same color assignment.
 
@@ -59,11 +59,11 @@ In the Ipe editor the color palette can added by hitting `Ctrl+Shift+S` (*Edit* 
 
 ![Ipe_ _style_sheets.png](https://github.com/christiankral/ColorPalette.jl/blob/main/resources/doc/Ipe_style_sheets.png?raw=true)
 
-The color palettes of one or more Ipe files can be exchanged by running the script `resources/ipe/cpeipe.sh`. This is very convinent, as Ipe drawings can be created with one color palette. The color palettes can be replaced by applying the script file.
+The color palettes of one or more Ipe files can be exchanged by running the script `resources/ipe/cpeipe.sh`. This is very convinent, as Ipe drawings can be created with one color palette. The color palettes can be replaced at a later instance in time by simply running the script file.
 
 # Install
 
-Install in Julia using
+Install in Julia:
 
 ```julia
 using Pkg
