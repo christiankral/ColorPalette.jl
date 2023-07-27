@@ -1,5 +1,5 @@
-export seasonal, contrast, coolors,
-    purple, hanser, hanser2
+export seasonal, coolors,
+    purple, purple2, hanser, hanser2
 
 # Inspired by: https://www.schemecolor.com/only-seasonal.php
 seasonal = [
@@ -9,14 +9,6 @@ seasonal = [
     ["#7aa337" "#93b45b" "#abc57d" "#c3d69f" "#dbe7c2"];
     ["#d37f2a" "#e09651" "#ecad75" "#f7c49a" "#ffdcc0"]]
 
-# First and fourth color of https://www.schemecolor.com/only-seasonal.php
-# In combination with https://www.learnui.design/tools/data-color-picker.html#palette
-contrast = [
-    ["#312B59" "#5c5380" "#887ea8" "#b6acd3" "#e6ddff"];
-    ["#82396e" "#a15f8d" "#c086ae" "#dfaecf" "#ffd7f2"];
-    ["#c94f65" "#d97281" "#e7939e" "#f4b4bc" "#ffd5da"];
-    ["#f1814a" "#f79867" "#fbae86" "#fec3a5" "#ffd9c5"];
-    ["#f0c435" "#f3cb5c" "#f4d27d" "#f4da9d" "#f3e1bc"]]
 
 coolors = [
     ["#0f4c5c" "#3b7182" "#6398aa" "#8bc0d4" "#b4ebff"];
@@ -32,6 +24,17 @@ purple = [
     ["#e53f71" "#ef6b8b" "#f790a6" "#fcb3c2" "#ffd5dd"];
     ["#f8955b" "#fba774" "#feb88e" "#ffc9a9" "#ffdac4"]]
 
+# First and fourth color of https://www.schemecolor.com/only-seasonal.php
+# In combination with https://www.learnui.design/tools/data-color-picker.html#palette
+purple2 = [
+    ["#312B59" "#5c5380" "#887ea8" "#b6acd3" "#e6ddff"];
+    ["#82396e" "#a15f8d" "#c086ae" "#dfaecf" "#ffd7f2"];
+    ["#c94f65" "#d97281" "#e7939e" "#f4b4bc" "#ffd5da"];
+    ["#f1814a" "#f79867" "#fbae86" "#fec3a5" "#ffd9c5"];
+    ["#f0c435" "#f3cb5c" "#f4d27d" "#f4da9d" "#f3e1bc"]]
+
+# Color palette matching technical book publications of the Hanser Verlag
+# Variant: default colors
 hanser = [
     ["#204786" "#546aa3" "#8090c1" "#acb8e0" "#d9e1ff"];
     ["#d71d2b" "#e65b50" "#f38777" "#fbafa2" "#ffd7cf"];
@@ -39,6 +42,8 @@ hanser = [
     ["#598234" "#789b57" "#97b47a" "#b7ce9f" "#d7e8c4"];
     ["#f68712" "#fc9c48" "#ffb171" "#ffc699" "#ffdbc1"]]
 
+# Color palette matching technical book publications of the Hanser Verlag
+# Variant: alternative colors 2
 hanser2 = [
     ["#384092" "#6664ad" "#908bc8" "#b9b3e3" "#e3deff"];
     ["#c71681" "#d7579b" "#e684b6" "#f3add0" "#ffd6ea"];

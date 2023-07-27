@@ -31,9 +31,9 @@ end
 
 function printcoloripeall()
     printcoloripe(ColorPalette.seasonal, name="ColorPalette.seasonal")
-    printcoloripe(ColorPalette.contrast, name="ColorPalette.contrast")
     printcoloripe(ColorPalette.coolors, name="ColorPalette.coolors")
     printcoloripe(ColorPalette.purple, name="ColorPalette.purple")
+    printcoloripe(ColorPalette.purple2, name="ColorPalette.purple2")
     printcoloripe(ColorPalette.hanser, name="ColorPalette.hanser")
     printcoloripe(ColorPalette.hanser2, name="ColorPalette.hanser2")
 end
@@ -68,9 +68,9 @@ end
 
 function printcolorlatexall()
     printcolorlatex(ColorPalette.seasonal, name="ColorPalette.seasonal")
-    printcolorlatex(ColorPalette.contrast, name="ColorPalette.contrast")
     printcolorlatex(ColorPalette.coolors, name="ColorPalette.coolors")
     printcolorlatex(ColorPalette.purple, name="ColorPalette.purple")
+    printcolorlatex(ColorPalette.purple2, name="ColorPalette.purple2")
     printcolorlatex(ColorPalette.hanser, name="ColorPalette.hanser")
     printcolorlatex(ColorPalette.hanser2, name="ColorPalette.hanser2")
 end

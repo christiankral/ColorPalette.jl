@@ -42,9 +42,9 @@ end
 
 function plotpaletteall()
     plotpalette(ColorPalette.seasonal, save=true, name="ColorPalette.seasonal")
-    plotpalette(ColorPalette.contrast, save=true, name="ColorPalette.contrast")
     plotpalette(ColorPalette.coolors, save=true, name="ColorPalette.coolors")
     plotpalette(ColorPalette.purple, save=true, name="ColorPalette.purple")
+    plotpalette(ColorPalette.purple2, save=true, name="ColorPalette.purple2")
     plotpalette(ColorPalette.hanser, save=true, name="ColorPalette.hanser")
     plotpalette(ColorPalette.hanser2, save=true, name="ColorPalette.hanser2")
 end
