@@ -2,6 +2,29 @@ export color2RGB, color2rgb, color2gray,
     brightness, contrast, color2HSV
 
 # Convert color to RGB codes between 0 and 255
+"""
+# Function call
+
+`color2RGB(color)`
+
+# Description
+
+Converts hex color code to R, G, B values, where
+- 0 ≤ R ≤ 255
+- 0 ≤ G ≤ 255
+- 0 ≤ B ≤ 255
+
+# Variables
+
+`color` Hex color code, e.g. "#ff0000"
+
+# Example
+
+```julia
+julia> R, G, B = color2RGB("#ff0000")
+(255, 0, 0)
+```
+"""
 function color2RGB(color)
     hex_value = parse(UInt, color[2:end], base=16)
 
@@ -12,12 +35,55 @@ function color2RGB(color)
 end
 
 # Convert color to rgb codes between 0 and 1
+"""
+# Function call
+
+`color2rgb(color)`
+
+# Description
+
+Converts hex color code to r, g, b values, where
+- 0 ≤ r ≤ 1
+- 0 ≤ g ≤ 1
+- 0 ≤ b ≤ 1
+
+# Variables
+
+`color` Hex color code, e.g. "#ff0000"
+
+# Example
+
+```julia
+julia> r, g, b = color2rgb("#ff0000")
+(1.0, 0.0, 0.0)
+```
+"""
 function color2rgb(color)
     R, G, B = color2RGB(color)
     return R/255, G/255, B/255
 end
 
 # Convert color to grayscale
+"""
+# Function call
+
+`color2gray(color)`
+
+# Description
+
+Converts hex color code to hex gray code
+
+# Variables
+
+`color` Hex color code, e.g. "#ff0000"
+
+# Example
+
+```julia
+julia> color2gray("#ff0000")
+"#555555"
+```
+"""
 function color2gray(color)
     R, G, B = color2RGB(color)
     grayscale = Int(round((R + G + B) / 3))
@@ -29,6 +95,32 @@ end
 
 # Calculate difference of brightness
 # Source: https://www.had2know.org/technology/color-contrast-calculator-web-design.html
+"""
+# Function call
+
+`brightness(color1, color2)`
+
+# Description
+
+Determines the brigness difference between the two color codes.
+If the brightness is difference is greater than 125, the colors have sufficient
+light/dark contrast and then the second return variable becomes `true`.
+
+See https://www.had2know.org/technology/color-contrast-calculator-web-design.html
+
+# Variables
+
+`color1` First hex color code
+
+`color2` Second hex color code
+
+# Example
+
+```julia
+b, bool = brightness("#ff0000", "#ffffff")
+(178.755, true)
+```
+"""
 function brightness(color1, color2)
     R1, G1, B1 = color2RGB(color1)
     R2, G2, B2 = color2RGB(color2)
@@ -41,6 +133,33 @@ end
 
 # Calculate difference of contrast
 # Source: https://www.had2know.org/technology/color-contrast-calculator-web-design.html
+"""
+# Function call
+
+`contrast(color1, color2)`
+
+# Description
+
+Determines the color difference between the two color codes.
+If the first return value is greater than 500
+there is we have sufficient hue contrast
+and then the second return variable becomes `true`.
+
+See https://www.had2know.org/technology/color-contrast-calculator-web-design.html
+
+# Variables
+
+`color1` First hex color code
+
+`color2` Second hex color code
+
+# Example
+
+```julia
+b, bool = contrast("#ff0000", "#ffffff")
+(510, true)
+```
+"""
 function contrast(color1, color2)
     R1, G1, B1 = color2RGB(color1)
     R2, G2, B2 = color2RGB(color2)
@@ -49,7 +168,33 @@ function contrast(color1, color2)
 end
 
 # Convert RGB to HSV
-# Source: https://de.wikipedia.org/wiki/HSV-Farbraum
+# Source: https://de.wikipedia.org/wiki/HSV-Farbraum and
+# https://en.wikipedia.org/wiki/HSL_and_HSV
+"""
+# Function call
+
+`color2HSV(color)`
+
+# Description
+
+Converts the hex color code to
+- `H` hue
+- `S` saturation
+- `V` lightness
+
+See https://en.wikipedia.org/wiki/HSL_and_HSV
+
+# Variables
+
+`color` Hex color code, e.g. "#ff0000"
+
+# Example
+
+```julia
+julia> H, S, V = color2HSV("#ff0000")
+(0.0, 1.0, 255)
+```
+"""
 function color2HSV(color)
     R, G, B = color2RGB(color)
     MAX = max(R, G, B)
