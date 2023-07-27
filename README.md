@@ -18,7 +18,7 @@ A color palette, e.g. `hanser`, is addressed by `color[c,h]`, where
 - `c` is the color index 1 to 5 (from bottom to top)
 - `h` is the hue index from 1 to 5 (from left to right)
 
-Typically, but necessarely, the color indexes `c` mean:
+Typically in electrical engineering, but not necessarely, the color indexes `c` mean:
 
 - `color[1,:]` = color of a voltage (blue)
 - `color[2,:]` = color of a current (red)
