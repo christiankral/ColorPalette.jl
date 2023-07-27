@@ -58,6 +58,8 @@ In the Ipe editor the color palette can added by hitting `Ctrl+Shift+S` (*Edit* 
 
 ![Ipe_ _style_sheets.png](https://github.com/christiankral/ColorPalette.jl/blob/main/resources/doc/Ipe_style_sheets.png?raw=true)
 
+The color palettes of one or more Ipe files can be exchanged by running the script `resources/ipe/cpeipe.sh`. This is very convinent, as Ipe drawings can be created with one color palette. The color palettes can be replaced by applying the script file.
+
 # Install
 
 Install in Julia using
@@ -66,9 +68,3 @@ Install in Julia using
 using Pkg
 Pkg.add(url = "https://github.com/christiankral/ColorPalette.jl#main")
 ```
-
-# Using color palettes in [Ipe Editor](https://ipe.otfried.org/)
-
-The color plaettes provided in this Julia package are also available for the
-[Ipe Editor](https://ipe.otfried.org/). The files are located in the subdirectory
-[ipe](https://github.com/christiankral/ColorPalette.jl/tree/main/ipe)
