@@ -53,7 +53,7 @@ For example, in LaTex then color name `color21` represents `color[2,1]`: so this
 
 ## Ipe
 
-Ipe style files are stored in the subdirectors `resources/ipe`. Linux users may "install" the style by creating a symbolic link into the subdirectory `~/.ipe/styles/` by running the script file `ln.sh`.
+[Ipe](https://ipe.otfried.org/) style files are stored in the subdirectors `resources/ipe`. Linux users may "install" the style by creating a symbolic link into the subdirectory `~/.ipe/styles/` by running the script file `ln.sh`.
 
 In the Ipe editor the color palette can added by hitting `Ctrl+Shift+S` (*Edit* $\triangleright$ *Style sheets*)
 
