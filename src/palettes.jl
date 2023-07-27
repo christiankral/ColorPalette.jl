@@ -8,7 +8,7 @@ gray = [
     ["#b2b2b2" "#bebebe" "#cacaca" "#d6d6d6" "#e2e2e2"];
     ["#999999" "#ababab" "#bdbdbd" "#cfcfcf" "#e2e2e2"];
     ["#808080" "#989898" "#b0b0b0" "#c9c9c9" "#e2e2e2"]]
-    
+
 # Inspired by: https://www.schemecolor.com/only-seasonal.php
 seasonal = [
     ["#312b59" "#5c5380" "#887ea8" "#b6acd3" "#e6ddff"];
