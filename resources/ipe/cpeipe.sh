@@ -38,8 +38,12 @@ then
 else
   CP=${2}
 fi
+
+CPN=$(basename ${CP} .isy)
 echo "Attempting to substitute color palette by:"
-echo "    ${CP}"
+echo "    ${CPN}"
+echo "    from file ${CP}"
+
 
 # Copy $CP to local folder and modify it for being substituted
 cp "${CP}" ".ins"
@@ -52,4 +56,5 @@ for file in $(find . -maxdepth 1 -name "$1"); do
   echo "Processing ${file}"
   sed -i -ne '/<ipestyle name=\"ColorPalette./ {p; r .ins' -e ':a; n; /<\/ipestyle>/ {p; b}; ba}; p' "${file}"
 done
-rm .ins
+sed -i "/<ipestyle name=\"ColorPalette./c\\<ipestyle name=\"${CPN}\">" "${file}"
+# rm .ins
