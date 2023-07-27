@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipestyle SYSTEM "ipe.dtd">
-<ipestyle name="Contrast">
+<ipestyle name="ColorPalette.purple2">
   <color name="color11" value="0.1922 0.1686 0.349"/>
   <color name="color12" value="0.3608 0.3255 0.502"/>
   <color name="color13" value="0.5333 0.4941 0.6588"/>
