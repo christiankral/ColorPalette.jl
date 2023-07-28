@@ -1,7 +1,7 @@
-export printcoloripe, printcoloripeall,
-    printcolorlatex, printcolorlatexall
+export printpaletteipe, printpaletteipeall,
+    printpalettelatex, printpalettelatexall
 
-function printcoloripe(color; name="")
+function printpaletteipe(color; name="")
     # Write to file
     if name != ""
         file = open(name*".isy", "w")
@@ -29,19 +29,19 @@ function printcoloripe(color; name="")
     end
 end
 
-function printcoloripeall()
-    printcoloripe(ColorPalette.black, name="ColorPalette.black")
-    printcoloripe(ColorPalette.gray, name="ColorPalette.gray")
-    printcoloripe(ColorPalette.seasonal, name="ColorPalette.seasonal")
-    printcoloripe(ColorPalette.coolors, name="ColorPalette.coolors")
-    printcoloripe(ColorPalette.purple, name="ColorPalette.purple")
-    printcoloripe(ColorPalette.purple2, name="ColorPalette.purple2")
-    printcoloripe(ColorPalette.hanser, name="ColorPalette.hanser")
-    printcoloripe(ColorPalette.hanser2, name="ColorPalette.hanser2")
-    printcoloripe(ColorPalette.hanser3, name="ColorPalette.hanser3")
+function printpaletteipeall()
+    printpaletteipe(ColorPalette.black, name="ColorPalette.black")
+    printpaletteipe(ColorPalette.gray, name="ColorPalette.gray")
+    printpaletteipe(ColorPalette.seasonal, name="ColorPalette.seasonal")
+    printpaletteipe(ColorPalette.coolors, name="ColorPalette.coolors")
+    printpaletteipe(ColorPalette.purple, name="ColorPalette.purple")
+    printpaletteipe(ColorPalette.purple2, name="ColorPalette.purple2")
+    printpaletteipe(ColorPalette.hanser, name="ColorPalette.hanser")
+    printpaletteipe(ColorPalette.hanser2, name="ColorPalette.hanser2")
+    printpaletteipe(ColorPalette.hanser3, name="ColorPalette.hanser3")
 end
 
-function printcolorlatex(color; name="")
+function printpalettelatex(color; name="")
     if name != ""
         file = open(name*".tex", "w")
         println(file, "% Color palette: "*name)
@@ -69,14 +69,14 @@ function printcolorlatex(color; name="")
     end
 end
 
-function printcolorlatexall()
-    printcolorlatex(ColorPalette.black, name="ColorPalette.black")
-    printcolorlatex(ColorPalette.gray, name="ColorPalette.gray")
-    printcolorlatex(ColorPalette.seasonal, name="ColorPalette.seasonal")
-    printcolorlatex(ColorPalette.coolors, name="ColorPalette.coolors")
-    printcolorlatex(ColorPalette.purple, name="ColorPalette.purple")
-    printcolorlatex(ColorPalette.purple2, name="ColorPalette.purple2")
-    printcolorlatex(ColorPalette.hanser, name="ColorPalette.hanser")
-    printcolorlatex(ColorPalette.hanser2, name="ColorPalette.hanser2")
-    printcolorlatex(ColorPalette.hanser3, name="ColorPalette.hanser3")
+function printpalettelatexall()
+    printpalettelatex(ColorPalette.black, name="ColorPalette.black")
+    printpalettelatex(ColorPalette.gray, name="ColorPalette.gray")
+    printpalettelatex(ColorPalette.seasonal, name="ColorPalette.seasonal")
+    printpalettelatex(ColorPalette.coolors, name="ColorPalette.coolors")
+    printpalettelatex(ColorPalette.purple, name="ColorPalette.purple")
+    printpalettelatex(ColorPalette.purple2, name="ColorPalette.purple2")
+    printpalettelatex(ColorPalette.hanser, name="ColorPalette.hanser")
+    printpalettelatex(ColorPalette.hanser2, name="ColorPalette.hanser2")
+    printpalettelatex(ColorPalette.hanser3, name="ColorPalette.hanser3")
 end

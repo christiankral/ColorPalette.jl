@@ -2,6 +2,7 @@
 
 ### v0.3.0 2023-07-XX
 
+- Rename print functions to maintain consistent naming
 - Add converstion function `rgb2color`
 - Add converstion function `RGB2color`
 - Add documentation to functions and package
