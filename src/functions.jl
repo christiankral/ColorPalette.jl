@@ -1,6 +1,6 @@
 export color2RGB, color2rgb, color2gray,
     brightness, contrast, color2HSV,
-    RGB2color
+    RGB2color, rgb2color
 
 # Convert color to RGB codes between 0 and 255
 """
@@ -245,6 +245,41 @@ julia> RGB2color(255,0,0)
 ```
 """
 function RGB2color(R, G, B)
+    color = "#" * string(R, base=16, pad=2) *
+        string(G, base=16, pad=2) *
+        string(B, base=16, pad=2)
+    return color
+end
+
+# Convert rgb to hex color code
+"""
+# Function call
+
+`rgb2color(r, g, b)`
+
+# Description
+
+Converts r, g, b relative codes to hex color code
+
+# Variables
+
+`r` Red relaitve code, where 0.0 ≤ `r` ≤ 1.0
+
+`g` Green relaitve code, where 0.0 ≤ `g` ≤ 1.0
+
+`b` Blue relaitve code, where 0.0 ≤ `B` ≤ 1.0
+
+# Example
+
+```julia
+julia> rgb2color(1.0,0.0,0.0)
+"#ff0000"
+```
+"""
+function rgb2color(r, g, b)
+    R = Int(round(r * 255))
+    G = Int(round(g * 255))
+    B = Int(round(b * 255))
     color = "#" * string(R, base=16, pad=2) *
         string(G, base=16, pad=2) *
         string(B, base=16, pad=2)
