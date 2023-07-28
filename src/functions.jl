@@ -241,7 +241,7 @@ Converts R, G, B integer codes to hex color code
 
 ```julia
 julia> RGB2color(255,0,0)
-"#555555"
+"#ff0000"
 ```
 """
 function RGB2color(R, G, B)
