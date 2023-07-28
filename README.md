@@ -69,3 +69,20 @@ Install in Julia:
 using Pkg
 Pkg.add(url = "https://github.com/christiankral/ColorPalette.jl#main")
 ```
+
+# Nomenclature
+
+- `color` color hex code, e.g. "#ff0000"
+- `gray` gray hex code, e.g. "#555555"
+- `RGB` Tuple `(R, G, B)`
+    - `R` red with 0 ≤ `R` ≤ 255
+    - `G` red with 0 ≤ `G` ≤ 255
+    - `B` red with 0 ≤ `B` ≤ 255
+- `rgb` Tuple `(r, g, b)`
+    - `r` red with 0.0 ≤ `r` ≤ 1.0
+    - `g` red with 0.0 ≤ `g` ≤ 1.0
+    - `b` red with 0.0 ≤ `b` ≤ 1.0
+- `HSV` Tuple `(H, S, V)` 
+    - `H` red with 0.0 ≤ `H` ≤ 1.0
+    - `S` red with 0.0 ≤ `S` ≤ 1.0
+    - `V` red with 0 ≤ `V` ≤ 255
