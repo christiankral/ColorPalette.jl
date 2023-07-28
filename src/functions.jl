@@ -1,5 +1,6 @@
 export color2RGB, color2rgb, color2gray,
-    brightness, contrast, color2HSV
+    brightness, contrast, color2HSV,
+    RGB2color
 
 # Convert color to RGB codes between 0 and 255
 """
@@ -10,9 +11,9 @@ export color2RGB, color2rgb, color2gray,
 # Description
 
 Converts hex color code to R, G, B values, where
-- 0 ≤ R ≤ 255
-- 0 ≤ G ≤ 255
-- 0 ≤ B ≤ 255
+- 0 ≤ R ≤ 255 (red)
+- 0 ≤ G ≤ 255 (green)
+- 0 ≤ B ≤ 255 (blue)
 
 # Variables
 
@@ -31,7 +32,7 @@ function color2RGB(color)
     R = Int((hex_value >> 16) & 0xFF)
     G = Int((hex_value >> 8) & 0xFF)
     B = Int(hex_value & 0xFF)
-    return R,G,B
+    return R, G, B
 end
 
 # Convert color to rgb codes between 0 and 1
@@ -43,9 +44,9 @@ end
 # Description
 
 Converts hex color code to r, g, b values, where
-- 0 ≤ r ≤ 1
-- 0 ≤ g ≤ 1
-- 0 ≤ b ≤ 1
+- 0.0 ≤ r ≤ 1.0 (red)
+- 0.0 ≤ g ≤ 1.0 (green)
+- 0.0 ≤ b ≤ 1.0 (ble)
 
 # Variables
 
@@ -89,7 +90,7 @@ function color2gray(color)
     grayscale = Int(round((R + G + B) / 3))
 
     # Convert gray scale value to color code
-    gray = "#" * string(grayscale, base=16)^3
+    gray = "#" * string(grayscale, base=16, pad=2)^3
     return gray
 end
 
@@ -178,9 +179,9 @@ end
 # Description
 
 Converts the hex color code to
-- `H` hue
-- `S` saturation
-- `V` lightness
+- `H` hue with 0.0 ≤ H ≤ 1.0
+- `S` saturation with 0.0 ≤ `S`≤ 1.0
+- `V` lightness value with 0 ≤ V ≤ 255
 
 See https://en.wikipedia.org/wiki/HSL_and_HSV
 
@@ -216,4 +217,36 @@ function color2HSV(color)
     # Calculate value
     V = MAX
     return H, S, V
+end
+
+# Convert RGB to hex color code
+"""
+# Function call
+
+`RGB2color(R, G, B)`
+
+# Description
+
+Converts R, G, B integer codes to hex color code
+
+# Variables
+
+`R` Red integer code, where 0 ≤ `R` ≤ 255
+
+`G` Green integer code, where 0 ≤ `G` ≤ 255
+
+`B` Blue integer code, where 0 ≤ `B` ≤ 255
+
+# Example
+
+```julia
+julia> RGB2color(255,0,0)
+"#555555"
+```
+"""
+function RGB2color(R, G, B)
+    color = "#" * string(R, base=16, pad=2) *
+        string(G, base=16, pad=2) *
+        string(B, base=16, pad=2)
+    return color
 end
