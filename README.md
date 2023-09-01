@@ -67,7 +67,7 @@ Install in Julia:
 
 ```julia
 using Pkg
-Pkg.add(url = "https://github.com/christiankral/ColorPalette.jl#main")
+Pkg.add(url = "https://github.com/christiankral/ColorPalette.jl")
 ```
 
 # Nomenclature
@@ -82,7 +82,7 @@ Pkg.add(url = "https://github.com/christiankral/ColorPalette.jl#main")
     - `r` red with 0.0 ≤ `r` ≤ 1.0
     - `g` red with 0.0 ≤ `g` ≤ 1.0
     - `b` red with 0.0 ≤ `b` ≤ 1.0
-- `HSV` Tuple `(H, S, V)` 
+- `HSV` Tuple `(H, S, V)`
     - `H` red with 0.0 ≤ `H` ≤ 1.0
     - `S` red with 0.0 ≤ `S` ≤ 1.0
     - `V` red with 0 ≤ `V` ≤ 255
