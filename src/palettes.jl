@@ -34,7 +34,7 @@ coolors = [
     ["#fb8b24" "#ff9f50" "#ffb376" "#ffc79b" "#ffdbc1"]]
 
 purple = [
-    ["#3f1551" "#6a4379" "#9672a3" "#acb8e0" "#f4dafc"];
+    ["#3f1551" "#6a4379" "#9672a3" "#c4a5cf" "#f4dafc"];
     ["#653780" "#875e9e" "#aa85bd" "#ceafdd" "#f2dafd"];
     ["#9c3587" "#b55fa1" "#ce87bc" "#e6afd7" "#fed7f3"];
     ["#e53f71" "#ef6b8b" "#f790a6" "#fcb3c2" "#ffd5dd"];
@@ -54,7 +54,7 @@ purple2 = [
 hanser = [
     ["#204786" "#546aa3" "#8090c1" "#acb8e0" "#d9e1ff"];
     ["#d71d2b" "#e65b50" "#f38777" "#fbafa2" "#ffd7cf"];
-    ["#b32e7b" "#c85e97" "#db87b3" "#edaecf" "#ffd6eb"];
+    ["#973170" "#b25c8e" "#cc84ad" "#e5adcd" "#ffd6ed"];
     ["#598234" "#789b57" "#97b47a" "#b7ce9f" "#d7e8c4"];
     ["#f68712" "#fc9c48" "#ffb171" "#ffc699" "#ffdbc1"]]
 

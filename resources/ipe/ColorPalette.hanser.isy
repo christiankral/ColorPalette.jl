@@ -10,11 +10,11 @@
   <color name="color23" value="0.9529 0.5294 0.4667"/>
   <color name="color24" value="0.9843 0.6863 0.6353"/>
   <color name="color25" value="1.0 0.8431 0.8118"/>
-  <color name="color31" value="0.702 0.1804 0.4824"/>
-  <color name="color32" value="0.7843 0.3686 0.5922"/>
-  <color name="color33" value="0.8588 0.5294 0.702"/>
-  <color name="color34" value="0.9294 0.6824 0.8118"/>
-  <color name="color35" value="1.0 0.8392 0.9216"/>
+  <color name="color31" value="0.5922 0.1922 0.4392"/>
+  <color name="color32" value="0.698 0.3608 0.5569"/>
+  <color name="color33" value="0.8 0.5176 0.6784"/>
+  <color name="color34" value="0.898 0.6784 0.8039"/>
+  <color name="color35" value="1.0 0.8392 0.9294"/>
   <color name="color41" value="0.349 0.5098 0.2039"/>
   <color name="color42" value="0.4706 0.6078 0.3412"/>
   <color name="color43" value="0.5922 0.7059 0.4784"/>
