@@ -52,6 +52,16 @@ purple2 = [
 # Color palette matching technical book publications of the Hanser Verlag
 # Variant: default colors
 hanser = [
+    "#000066" "#33338C" "#6666B2" "#8CAFD9" "#B3CAEE";
+    "#D90000" "#E63333" "#EC6666" "#F29999" "#F9BBDD";
+    "#6C0033" "#8C3355" "#AD6677" "#C29999" "#D7BBBB";
+    "#008000" "#339933" "#66B266" "#8CD48C" "#B3E6B3";
+    "#E66600" "#FF801A" "#FF994D" "#FFB380" "#FFCCB3"
+    ]
+
+# Color palette matching technical book publications of the Hanser Verlag
+# until 2025. Variant: default colors
+hanser1 = [
     ["#204786" "#546aa3" "#8090c1" "#acb8e0" "#d9e1ff"];
     ["#d71d2b" "#e65b50" "#f38777" "#fbafa2" "#ffd7cf"];
     ["#973170" "#b25c8e" "#cc84ad" "#e5adcd" "#ffd6ed"];
