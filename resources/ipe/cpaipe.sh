@@ -19,6 +19,9 @@ then
   echo "    ColorPalette.Y.isy Color palette file to be substuted in IPE file(s)"
   echo "           If the file path is not specified, the file is taken from:"
   echo "               ~/.ipe/styles/ColorPalette.Y.isy"
+  echo ""
+  echo "    NOTE   that the conent of the file ColorPalette.Y.isy is added to the"
+  echo "           IPE files, so the inserted XML tag may differ from ColorPalette.Y"
   exit
 fi
 
