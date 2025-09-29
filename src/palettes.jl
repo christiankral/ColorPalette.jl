@@ -1,5 +1,7 @@
 export gray, seasonal, coolors,
     purple, purple2, hanser, hanser2
+# Shade calculation
+# https://colorkit.co/color-shades-generator/
 
 # Black palette
 black = [
