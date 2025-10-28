@@ -1,29 +1,29 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipestyle SYSTEM "ipe.dtd">
-<ipestyle name="ColorPalette.hanser202510">
-  <color name="color11" value="0.0 0.2 0.6"/>
-  <color name="color12" value="0.149 0.3255 0.6667"/>
-  <color name="color13" value="0.2863 0.4392 0.7255"/>
-  <color name="color14" value="0.4196 0.549 0.7882"/>
-  <color name="color15" value="0.5608 0.6588 0.8431"/>
+<ipestyle name="ColorPalette.hanser">
+  <color name="color11" value="0.0 0.0 0.4"/>
+  <color name="color12" value="0.2 0.2 0.549"/>
+  <color name="color13" value="0.4 0.4 0.698"/>
+  <color name="color14" value="0.549 0.549 0.7765"/>
+  <color name="color15" value="0.698 0.698 0.8471"/>
   <color name="color21" value="0.851 0.0 0.0"/>
-  <color name="color22" value="0.8941 0.2784 0.2196"/>
-  <color name="color23" value="0.9294 0.4196 0.3569"/>
-  <color name="color24" value="0.9569 0.5451 0.4863"/>
-  <color name="color25" value="0.9804 0.6627 0.6118"/>
-  <color name="color31" value="0.4 0.0 0.6"/>
-  <color name="color32" value="0.4784 0.2235 0.6627"/>
-  <color name="color33" value="0.5608 0.3608 0.7255"/>
-  <color name="color34" value="0.6471 0.4902 0.7843"/>
-  <color name="color35" value="0.7333 0.6157 0.8431"/>
-  <color name="color41" value="0.3373 0.5098 0.1922"/>
-  <color name="color42" value="0.4275 0.5765 0.3137"/>
-  <color name="color43" value="0.5176 0.6471 0.4275"/>
-  <color name="color44" value="0.6118 0.7176 0.5412"/>
-  <color name="color45" value="0.7059 0.7882 0.651"/>
-  <color name="color51" value="1.0 0.549 0.0"/>
-  <color name="color52" value="1.0 0.6196 0.2824"/>
-  <color name="color53" value="1.0 0.6863 0.4275"/>
-  <color name="color54" value="1.0 0.7529 0.549"/>
-  <color name="color55" value="1.0 0.8157 0.6667"/>
+  <color name="color22" value="0.902 0.2 0.2"/>
+  <color name="color23" value="0.9255 0.4 0.4"/>
+  <color name="color24" value="0.9451 0.549 0.549"/>
+  <color name="color25" value="0.9608 0.698 0.698"/>
+  <color name="color31" value="0.5412 0.0 0.5294"/>
+  <color name="color32" value="0.6275 0.251 0.6078"/>
+  <color name="color33" value="0.7412 0.4392 0.7373"/>
+  <color name="color34" value="0.7255 0.5216 0.7216"/>
+  <color name="color35" value="0.7608 0.6118 0.7608"/>
+  <color name="color41" value="0.0 0.651 0.3176"/>
+  <color name="color42" value="0.3412 0.7216 0.4549"/>
+  <color name="color43" value="0.5255 0.7961 0.5882"/>
+  <color name="color44" value="0.6863 0.8627 0.7255"/>
+  <color name="color45" value="0.8431 0.9333 0.8627"/>
+  <color name="color51" value="1.0 0.4196 0.0"/>
+  <color name="color52" value="1.0 0.5294 0.2941"/>
+  <color name="color53" value="1.0 0.6314 0.451"/>
+  <color name="color54" value="1.0 0.7294 0.5922"/>
+  <color name="color55" value="1.0 0.8196 0.7294"/>
 </ipestyle>

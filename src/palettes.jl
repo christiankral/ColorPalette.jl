@@ -42,7 +42,7 @@ purple = [
     ["#e53f71" "#ef6b8b" "#f790a6" "#fcb3c2" "#ffd5dd"];
     ["#f8955b" "#fba774" "#feb88e" "#ffc9a9" "#ffdac4"]]
 
-# First and fourth color of https://www.schemecolor.com/only-seasonal.php
+# First and fourt   h color of https://www.schemecolor.com/only-seasonal.php
 # In combination with https://www.learnui.design/tools/data-color-picker.html#palette
 purple2 = [
     ["#312B59" "#5c5380" "#887ea8" "#b6acd3" "#e6ddff"];
@@ -51,17 +51,7 @@ purple2 = [
     ["#f1814a" "#f79867" "#fbae86" "#fec3a5" "#ffd9c5"];
     ["#f0c435" "#f3cb5c" "#f4d27d" "#f4da9d" "#f3e1bc"]]
 
-# Color palette matching technical book publications of the Hanser Verlag
-# Variant: default colors
 hanser = [
-    "#000066" "#33338C" "#6666B2" "#8C8CC6" "#B2B2D8";
-    "#D90000" "#E63333" "#EC6666" "#F18C8C" "#F5B2B2";
-    "#8A0087" "#A0409B" "#BD70BC" "#B985B8" "#C29CC2";
-    "#00A651" "#57B874" "#86CB96" "#AFDCB9" "#D7EEDC";
-    "#FF6B00" "#FF874B" "#FFA173" "#FFBA97" "#FFD1BA"
-    ]
-
-hanser202510 = [
     "#003399" "#2653aa" "#4970b9" "#6b8cc9" "#8fa8d7";
     "#D90000" "#e44738" "#ed6b5b" "#f48b7c" "#faa99c";
     "#660099" "#7a39a9" "#8f5cb9" "#a57dc8" "#bb9dd7";
@@ -95,3 +85,13 @@ hanser3 = [
     ["#60318a" "#845aa6" "#a883c3" "#ccaee0" "#f0dbfe"];
     ["#009a45" "#4fae66" "#7ac388" "#a2d7aa" "#c9ebcd"];
     ["#f9bb15" "#fbc44e" "#fccc75" "#fad699" "#f6dfbd"]]
+
+# Color palette matching technical book publications of the Hanser Verlag
+# Variant: default colors
+hanser202510 = [
+    "#000066" "#33338C" "#6666B2" "#8C8CC6" "#B2B2D8";
+    "#D90000" "#E63333" "#EC6666" "#F18C8C" "#F5B2B2";
+    "#8A0087" "#A0409B" "#BD70BC" "#B985B8" "#C29CC2";
+    "#00A651" "#57B874" "#86CB96" "#AFDCB9" "#D7EEDC";
+    "#FF6B00" "#FF874B" "#FFA173" "#FFBA97" "#FFD1BA"
+    ]
