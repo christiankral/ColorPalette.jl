@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipestyle SYSTEM "ipe.dtd">
-<ipestyle name="ColorPalette.hanser">
+<ipestyle name="ColorPalette.hanser202510">
   <color name="color11" value="0.0 0.0 0.4"/>
   <color name="color12" value="0.2 0.2 0.549"/>
   <color name="color13" value="0.4 0.4 0.698"/>
