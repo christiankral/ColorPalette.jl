@@ -7,5 +7,7 @@ ln -sf "${PWD}/ColorPalette.coolors.isy" "${HOME}/.ipe/styles/ColorPalette.coolo
 ln -sf "${PWD}/ColorPalette.purple.isy" "${HOME}/.ipe/styles/ColorPalette.purple.isy"
 ln -sf "${PWD}/ColorPalette.purple2.isy" "${HOME}/.ipe/styles/ColorPalette.purple2.isy"
 ln -sf "${PWD}/ColorPalette.hanser.isy" "${HOME}/.ipe/styles/ColorPalette.hanser.isy"
+ln -sf "${PWD}/ColorPalette.hanser202510.isy" "${HOME}/.ipe/styles/ColorPalette.hanser202510.isy"
+ln -sf "${PWD}/ColorPalette.hanser1.isy" "${HOME}/.ipe/styles/ColorPalette.hanser1.isy"
 ln -sf "${PWD}/ColorPalette.hanser2.isy" "${HOME}/.ipe/styles/ColorPalette.hanser2.isy"
 ln -sf "${PWD}/ColorPalette.hanser3.isy" "${HOME}/.ipe/styles/ColorPalette.hanser3.isy"

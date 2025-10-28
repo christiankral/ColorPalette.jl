@@ -61,6 +61,14 @@ hanser = [
     "#FF6B00" "#FF874B" "#FFA173" "#FFBA97" "#FFD1BA"
     ]
 
+hanser202510 = [
+    "#003399" "#2653aa" "#4970b9" "#6b8cc9" "#8fa8d7";
+    "#D90000" "#e44738" "#ed6b5b" "#f48b7c" "#faa99c";
+    "#660099" "#7a39a9" "#8f5cb9" "#a57dc8" "#bb9dd7";
+    "#568231" "#6d9350" "#84a56d" "#9cb78a" "#b4c9a6";
+    "#ff8c00" "#ff9e48" "#ffaf6d" "#ffc08c" "#ffd0aa"
+    ]
+    
 # Color palette matching technical book publications of the Hanser Verlag
 # until 2025. Variant: default colors
 hanser1 = [
